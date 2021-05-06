@@ -1,0 +1,302 @@
+/*Typography*/
+
+*{
+  margin:0;
+  padding:0;
+}
+
+.clr{
+  clear:both;
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  src: url('fonts/Tiempos Headline-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('fonts/CormorantGaramond-Light.ttf');
+}
+
+.alex img {
+  padding-top:5px;
+  padding-bottom: 24px;
+}
+
+.alex img:hover {
+  animation-name: emoji;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+
+.joyce img{
+  padding-top:5px;
+  padding-bottom: 28px;
+}
+
+.joyce img:hover {
+  animation-name: emoji;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+
+
+h1 {
+  font-family: 'Tiempos';
+  font-size: 70px;
+  line-height: 78px;
+  color: #F9876F;
+  margin-top: 100px;
+  margin-bottom:40px;
+  animation-name: title;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes title {
+  0% {color: #F9876F;}
+  50% {color: #FFCD92;}
+  100% {color: #F9876F;}
+}
+
+h2 {
+  font-family: 'Roboto';
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+  color: #000;
+}
+
+h3 {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+h3:hover {
+  animation-name: emoji;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+
+h4 {
+  font-family: 'Garamond';
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: #525252;
+  padding-bottom: 20px;
+}
+
+h5 {
+  font-family: 'Roboto';
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  color: #F9876F;
+}
+
+h5:hover {
+  color: #FFCD92;
+}
+
+hr {
+  height: 5px;
+  background-color: #E8E7E7;
+  border: 0 none;
+  animation-name: line;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes line {
+  0% {background-color: #CBF1EF;}
+  25% {background-color: #D1E9FF;}
+  50% {background-color: #E8DDFF;}
+  75% {background-color: #D1E9FF;}
+  100% {background-color: #CBF1EF;}
+}
+
+@keyframes emoji {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(-20px);}
+  100% {transform: translateY(0px);}
+}
+
+.container {
+  background-color: #F2FAFF;
+}
+
+/*Structure*/
+
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 4%;
+  grid-row-gap: 60px;
+  margin: 0px 100px;
+  text-align: left;
+}
+
+.title {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  text-align: left;
+}
+
+.bottle {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.bottle img{
+  margin: 0% 10%;
+}
+
+@media (max-width:1150px){
+  .bottle {
+    grid-column: 3 / span 2;
+  }
+}
+
+@media (max-width:1150px){
+  .bottle img{
+    width: 60%;
+    margin: 0% 20%;
+  }
+}
+
+.frice1 {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.maia {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.aishwarya {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.eugene {
+  grid-row: 2;
+  grid-column: 4;
+}
+
+.line1 {
+  grid-row: 3;
+  grid-column: 1 / span 4;
+}
+
+.jocelyn {
+  grid-row: 4;
+  grid-column: 1;
+}
+
+.joyce {
+  grid-row: 4;
+  grid-column: 2;
+}
+
+.juliette {
+  grid-row: 4;
+  grid-column: 3;
+}
+
+.danny {
+  grid-row: 4;
+  grid-column: 4;
+}
+
+.line2 {
+  grid-row: 5;
+  grid-column: 1 / span 4;
+}
+
+.kaitlan {
+  grid-row: 6;
+  grid-column: 1;
+}
+
+.mellisa {
+  grid-row: 6;
+  grid-column: 2;
+}
+
+.sunny {
+  grid-row: 6;
+  grid-column: 3;
+}
+
+.emily {
+  grid-row: 6;
+  grid-column: 4;
+}
+
+.line3 {
+  grid-row: 7;
+  grid-column: 1 / span 4;
+}
+
+.joseph {
+  grid-row: 8;
+  grid-column: 1;
+}
+
+.simmone {
+  grid-row: 8;
+  grid-column: 2;
+}
+
+.courtney {
+  grid-row: 8;
+  grid-column: 3;
+}
+
+.purva {
+  grid-row: 8;
+  grid-column: 4;
+}
+
+.line4 {
+  grid-row: 9;
+  grid-column: 1 / span 4;
+}
+
+.jasper {
+  grid-row: 10;
+  grid-column: 1;
+}
+
+.jenna {
+  grid-row: 10;
+  grid-column: 2;
+}
+
+.alex {
+  grid-row: 10;
+  grid-column: 3;
+}
+
+.cara {
+  grid-row: 10;
+  grid-column: 4;
+}
+
+.line5 {
+  grid-row: 11;
+  grid-column: 1 / span 4;
+}
+
+.frice2 {
+  grid-row: 12;
+  grid-column: 1;
+  padding-bottom:150px;
+}
